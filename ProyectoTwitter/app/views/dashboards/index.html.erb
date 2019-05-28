@@ -1,0 +1,16 @@
+<h1>Dashboards#index</h1>
+<p>Find me in app/views/dashboards/index.html.erb</p>
+
+<p> Hola Inmundo</p>
+<a href="/dashboards/about">Link a about</a>
+<br>
+<%= link_to 'Link a about', dashboards_about_path %>
+<br>
+
+<%= "el resultado de tres más dos es " + (3+2).to_s %>
+<% @posts.each do |post| %>
+    <h2><%=  post.name%>  <h2>
+    <p><%=  post.content%></p>
+<% end %>
+
+
